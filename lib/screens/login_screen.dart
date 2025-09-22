@@ -16,8 +16,8 @@ class LoginScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             const Text(
-              "Welcome Back",
-              style: TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+              "Welcome To Expiry Tracker",
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 32),
