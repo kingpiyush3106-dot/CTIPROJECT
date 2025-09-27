@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'scan_barcode_screen.dart'; 
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -41,10 +42,20 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 30),
             ElevatedButton.icon(
               onPressed: () {
-                // Later: Navigate to Add Product Screen
+                print('add product button pressed!');
+                Navigator.pushNamed(context, '/scanBarcode');
+                
               },
               icon: const Icon(Icons.add),
               label: const Text("Add Product"),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).primaryColor,
+                foregroundColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                padding: const EdgeInsets.symmetric(horizontal:24, vertical: 12), 
+              )
             ),
           ],
         ),
